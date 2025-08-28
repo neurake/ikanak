@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <!-- Top Bar -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="8dp"
+       android:orientation="horizontal">
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:hint="Search">
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/searchBar"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <ImageButton
+          android:id="@+id/btnProfile"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:src="@drawable/ic_profile"
+          android:background="?attr/selectableItemBackgroundBorderless"
+          android:contentDescription="Profile"/>
+   </LinearLayout>
+
+   <!-- Categories -->
+   <HorizontalScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="8dp"
+       android:scrollbars="none">
+
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+         <com.google.android.material.chip.Chip
+             android:id="@+id/chipHealthEat"
+             style="@style/Widget.MaterialComponents.Chip.Choice"
+             android:text="HealthEat"
+             app:chipIcon="@drawable/ic_health" />
+
+         <com.google.android.material.chip.Chip
+             android:id="@+id/chipJuice"
+             style="@style/Widget.MaterialComponents.Chip.Choice"
+             android:text="Juice"
+             app:chipIcon="@drawable/ic_juice" />
+
+         <com.google.android.material.chip.Chip
+             android:id="@+id/chipStore"
+             style="@style/Widget.MaterialComponents.Chip.Choice"
+             android:text="Store"
+             app:chipIcon="@drawable/ic_store" />
+
+         <com.google.android.material.chip.Chip
+             android:id="@+id/chipTraining"
+             style="@style/Widget.MaterialComponents.Chip.Choice"
+             android:text="TrainingCenter"
+             app:chipIcon="@drawable/ic_training" />
+
+         <com.google.android.material.chip.Chip
+             android:id="@+id/chipTech"
+             style="@style/Widget.MaterialComponents.Chip.Choice"
+             android:text="Technology"
+             app:chipIcon="@drawable/ic_tech" />
+      </LinearLayout>
+   </HorizontalScrollView>
+
+   <!-- Items List -->
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recyclerView"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:padding="8dp"/>
+
+   <!-- Bottom Navigation -->
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:id="@+id/bottomNav"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:menu="@menu/bottom_nav_menu"/>
+</LinearLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/blueback"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="24dp"-->
+<!--    android:gravity="center">-->
+<!--&lt;!&ndash;   <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;       android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;       android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;       android:src="@drawable/logo"/>&ndash;&gt;-->
+
+<!--   &lt;!&ndash; Welcome Message &ndash;&gt;-->
+<!--   <TextView-->
+<!--       android:id="@+id/txtWelcome"-->
+<!--       android:layout_width="wrap_content"-->
+<!--       android:layout_height="wrap_content"-->
+<!--       android:text="Welcome!"-->
+<!--       android:textColor="@color/white"-->
+<!--       android:textSize="20sp"-->
+<!--       android:layout_marginBottom="20dp" />-->
+
+<!--   &lt;!&ndash; Logout Button &ndash;&gt;-->
+<!--   <Button-->
+<!--       android:id="@+id/btnProfile"-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="wrap_content"-->
+<!--       android:text="Go to Profile" />-->
+
+<!--   &lt;!&ndash; Logout Button &ndash;&gt;-->
+<!--   <Button-->
+<!--       android:id="@+id/btnLogout"-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="wrap_content"-->
+<!--       android:text="Logout" />-->
+
+<!--</LinearLayout>-->

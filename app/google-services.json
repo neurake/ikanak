@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "467594552222",
+    "project_id": "ikanakapp",
+    "storage_bucket": "ikanakapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467594552222:android:18c7b29dc1f0d11472ac8f",
+        "android_client_info": {
+          "package_name": "com.kanakai.ikanak"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFp5Xvp7RX-rc1CShqTaNHNdgxKivceBY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
