@@ -14,9 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ikanak"
         tools:targetApi="31">
-        <activity
-            android:name=".Item"
-            android:exported="false" />
+
         <activity
             android:name=".AddressActivity"
             android:exported="false" />
